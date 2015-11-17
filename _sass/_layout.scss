@@ -5,7 +5,49 @@ body {
 
 .section {
   position: relative;
+  text-align: center;
 }
+
+.logo {
+  h1 {
+    font-size: ($base-font-size * 4);
+    margin-bottom: 0;
+  }
+  margin-bottom: 100px;
+}
+
+.what_we_do {
+  // disables col floating
+  float: none;
+  // and centers it
+  margin: 0 auto;
+
+  margin-bottom: 100px;
+  h2 {
+    font-size: ($base-font-size * 3);
+  }
+}
+
+.cta {
+  a:visited {
+    color: initial;
+  }
+}
+
+.purple_pulse {
+  -webkit-transition: -webkit-box-shadow .5s linear, background-color .5s linear, color .5s linear, border-color .5s linear;
+}
+
+.purple_pulse:hover {
+  -webkit-box-shadow: 0 0 18px #de5aff;
+  background-color: #9500ff;
+  border-color: #9500ff;
+  color: #fff;
+  &:visited {
+    color: #fff;
+  }
+}
+
 
 //----- defaults -----//
 /**
