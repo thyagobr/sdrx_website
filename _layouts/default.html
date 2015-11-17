@@ -5,16 +5,20 @@
 
   <body>
 
-    {% include header.html %}
-
-    <div class="page-content">
-      <div class="wrapper">
+    <div id="fullpage">
         {{ content }}
-      </div>
     </div>
 
-    {% include footer.html %}
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="{{ "/js/bootstrap.min.js" | prepend: site.baseurl }}"></script>
+    <script type="text/javascript" src="{{ "/js/jquery.fullpage.js" | prepend: site.baseurl }}"></script>
+    <script type="text/javascript" src="{{ "/js/index.js" | prepend: site.baseurl }}"></script>
 
+    <script>
+$(document).ready(function() {
+    $('#fullpage').fullpage();
+    });
+    </script>
   </body>
 
 </html>
