@@ -12,12 +12,23 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script type="text/javascript" src="{{ "/js/bootstrap.min.js" | prepend: site.baseurl }}"></script>
     <script type="text/javascript" src="{{ "/js/jquery.fullpage.js" | prepend: site.baseurl }}"></script>
+    <script type="text/javascript" src="{{ "/js/wow.js" | prepend: site.baseurl }}"></script>
     <script type="text/javascript" src="{{ "/js/index.js" | prepend: site.baseurl }}"></script>
 
     <script>
 $(document).ready(function() {
-    $('#fullpage').fullpage({
-      loopHorizontal: false
+    new WOW().init();
+    $("#how_to_help").hide();
+
+    $("#fullpage").fullpage({
+      loopHorizontal: false,
+      onSlideLeave: function(anchor, anchorindex, i, dir, ni) {
+        if (ni === 1) {
+          $("#how_to_help").show();
+          $("#how_to_help h1").addClass("animated fadeInUp");
+        }
+        console.log("current: " + i + ", next: " + ni + " and direction: " + dir);
+      }
     });
 });
     </script>
