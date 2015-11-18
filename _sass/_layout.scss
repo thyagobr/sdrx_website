@@ -37,7 +37,14 @@ body {
   h2 {
     font-family: 'Josefin Sans', sans-serif;
     font-size: ($base-font-size * 4);
+    font-weight: bold;
+    letter-spacing: 2px;
   }
+}
+
+.click_to_go {
+  display: block;
+  padding-top: 150px;
 }
 
 #how_to_help {
