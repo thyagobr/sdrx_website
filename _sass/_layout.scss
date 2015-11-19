@@ -1,3 +1,94 @@
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width : 600px) {
+  .logo {
+    padding-top: 20px;
+
+    h1 {
+      font-size: ($base-font-size * 4);
+      margin-bottom: 0;
+      font-family: "Audiowide";
+      letter-spacing: 5px;
+    }
+    font-family: 'Oxygen', sans-serif;
+    letter-spacing: 2px;
+    margin-bottom: 50px;
+  }
+
+  .what_we_do {
+    margin-bottom: 20px;
+
+    h2.large { display: none; }
+
+    h2 {
+      font-family: 'Josefin Sans', sans-serif;
+      font-size: $base-font-size * 2;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+  }
+
+  .cta {
+    span.large {
+      display: none;
+    }
+
+    font-family: 'Oxygen', sans-serif;
+    a:visited {
+      color: initial;
+    }
+
+    .btn-lg {
+      width: 200px;
+      padding: 10px 20px;
+    }
+  }
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 601px) {
+  .logo {
+    h1 {
+      font-size: ($base-font-size * 4);
+      margin-bottom: 0;
+      font-family: "Audiowide";
+      letter-spacing: 5px;
+    }
+    font-family: 'Oxygen', sans-serif;
+    letter-spacing: 2px;
+    margin-bottom: 150px;
+  }
+
+  .what_we_do {
+    margin-bottom: 100px;
+
+    h2.small{ display: none; }
+
+    h2 {
+      font-family: 'Josefin Sans', sans-serif;
+      font-size: ($base-font-size * 4);
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+  }
+
+  .cta {
+    span.small {
+      display: none;
+    }
+
+    font-family: 'Oxygen', sans-serif;
+    a:visited {
+      color: initial;
+    }
+
+    .btn-lg {
+      padding: 30px 50px;
+    }
+  }
+
+}
+
 body {
   background-color: #000;
   color: #fff;
@@ -5,6 +96,7 @@ body {
 
 #section_i {
   -webkit-box-shadow: 0 0 300px 200px #000 inset;
+  -moz-box-shadow: 0 0 300px 200px #000 inset;
   background-image: url("/imgs/bg_terminal.jpg");
 }
 
@@ -14,53 +106,15 @@ body {
   text-align: center;
 }
 
-.logo {
-  h1 {
-    font-size: ($base-font-size * 4);
-    margin-bottom: 0;
-    font-family: "Audiowide";
-    letter-spacing: 5px;
-  }
-  font-family: 'Oxygen', sans-serif;
-  letter-spacing: 2px;
-  margin-bottom: 150px;
-}
-
 .col-centered {
   float: none;
   margin: 0 auto;
 }
 
-.what_we_do {
-  margin-bottom: 100px;
-
-  h2 {
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: ($base-font-size * 4);
-    font-weight: bold;
-    letter-spacing: 2px;
-  }
-}
 
 .click_to_go {
   display: block;
   padding-top: 150px;
-}
-
-#how_to_help {
-  width: 100%;
-  height: 100%;
-}
-
-.cta {
-  font-family: 'Oxygen', sans-serif;
-  a:visited {
-    color: initial;
-  }
-
-  .btn-lg {
-    padding: 30px 50px;
-  }
 }
 
 .purple_pulse {
